@@ -5,7 +5,7 @@ import 'package:state_management/02_distributed/distributed_homepage.dart';
 import 'package:state_management/03_distributed_with_passive_widgets/distributed_passive_homepage.dart';
 import 'package:state_management/04_global/global_homepage.dart';
 
-const config = Config.local;
+const config = Config.distributed;
 
 void main() {
   runApp(const MyApp());
