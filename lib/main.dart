@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:state_management/00_general/config.dart';
 import 'package:state_management/01_local/local_homepage.dart';
 import 'package:state_management/02_distributed/distributed_homepage.dart';
 import 'package:state_management/03_distributed_with_passive_widgets/distributed_passive_homepage.dart';
 import 'package:state_management/04_global/global_homepage.dart';
 
-const config = Config.distributed;
+const config = Config.global;
 
 void main() {
-  runApp(const MyApp());
+  runApp(ProviderScope(child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
